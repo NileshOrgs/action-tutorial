@@ -1,0 +1,13 @@
+name: "Hello World"
+description: "This is the first sample github action."
+inputs: 
+  who-to-greet:
+    description: "Who to greet ?"
+    required: true
+    default: "World"
+outputs:
+  time: 
+    description: "Time we greeted you."
+runs:
+  using: "node16"
+  main: "index.js"
